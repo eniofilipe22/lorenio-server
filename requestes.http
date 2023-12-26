@@ -3,3 +3,23 @@ GET http://localhost:3000/ HTTP/1.1
 ###
 
 POST http://localhost:3000/preference HTTP/1.1
+
+###
+
+POST http://localhost:3000/pessoa HTTP/1.1
+
+###
+
+POST http://localhost:3000/produto HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Sofá",
+    "description": "sofázinho pra nossa casinha",
+    "price": 1000,
+    "image": "sofa.png"
+}
+
+###
+
+GET http://localhost:3000/produto HTTP/1.1
